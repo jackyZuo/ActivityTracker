@@ -1,5 +1,6 @@
 package com.fashare.activitytracker;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Point;
@@ -69,11 +70,7 @@ public class FloatingView extends LinearLayout {
                 className = event.getClassName();
 
         mTvPackageName.setText(packageName);
-        mTvClassName.setText(
-                className.startsWith(packageName)?
-                className.substring(packageName.length()):
-                className
-        );
+        mTvClassName.setText(className);
     }
 
     Point preP, curP;

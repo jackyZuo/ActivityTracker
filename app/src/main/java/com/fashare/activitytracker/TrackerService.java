@@ -55,6 +55,8 @@ public class TrackerService extends AccessibilityService {
                     event.getClassName().toString()
             ));
         }
+
+
     }
 
     @Override
